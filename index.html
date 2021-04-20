@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Tea - CoCo Bubble Tea</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="zone sticky">
+        <ul class="main-nav">
+            <li>CoCo MilkTea</li>
+            <li class="cartIcon" id="cartIcon">🛒</li>
+        </ul>
+    </nav>
+
+    <!-- Modal -->
+    <div id="modalId" class="modal">
+        <div class="insideModal">
+            <span class="exit">close</span>
+            <h1>Cart</h1>
+            <div class="nCart">
+            <p id="nCart" class="nCart"></p>
+            </div>
+            <div id="cartList" class="cartList"></div>
+            <div class="checkout">
+                <button>Checkout</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Carousel-->
+    <section class="carousel zone" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <a href="#carousel__slide3"
+                 class="carousel__prev">Go to last slide</a>
+              <a href="#carousel__slide2"
+                 class="carousel__next">Go to next slide</a>
+            </div>
+          </li>
+          <li id="carousel__slide2"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3"
+               class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide3"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1"
+               class="carousel__next">Go to first slide</a>
+          </li>
+        </ol>
+
+    </section>
+
+    <!-- Menu -->
+
+    <div class="myMenu">
+        <h1> MILK TEA</h1>
+        <h2>
+            Freshly brewed tea infused with non-dairy creamer. Available hot and cold!
+        </h2>
+
+        <div class="box"></div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
