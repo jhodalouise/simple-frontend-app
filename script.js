@@ -108,17 +108,12 @@ for (let i=0; i < productList.length; i++) {
 }
 
 let itemPicture=[];
-let itemName=[];
-let itemPrice=[];
 function addToCart(i) {
     itemPicture.push(productList[i].picture);
-    itemName.push(productList[i].name);
-    itemPrice.push(productList[i].price);
 
-    let y ="item" + i*1000;
-    cName=".item"+ y;
+    cName=".item"+ i;
     let div = document.createElement("div");
-    div.className="item"+y;
+    div.className="item"+i;
     document.querySelector('.cartList').appendChild(div);
 
     let img = document.createElement("img");
